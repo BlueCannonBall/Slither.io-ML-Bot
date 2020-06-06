@@ -11,7 +11,7 @@ file, You can obtain one at http://mozilla.org/MPL/2.0/.
 // @namespace    http://slither.io/
 // @version      1.2.9
 // @description  Slither.io bot
-// @author       Ermiya Eskandary & Théophile Cailliau
+// @author       BlueCannonBall (aka OpTiMaL)
 // @match        http://slither.io/
 // @grant        none
 // ==/UserScript==
@@ -181,7 +181,7 @@ Changes you make here will be kept between script versions
 */
 var customBotOptions = {
     // target fps
-    targetFps: 30,
+    targetFps: 60,
     // size of arc for collisionAngles
     // arcSize: Math.PI / 8,
     // radius multiple for circle intersects
