@@ -1,5 +1,3 @@
-[![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg?maxAge=2592000)](https://gitter.im/ErmiyaEskandary/Slither.io-bot?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-
 # Table of Contents
 - [Installation instructions](https://github.com/ErmiyaEskandary/Slither.io-bot#installation-instructions)
 	- [Visual tutorial](https://github.com/ErmiyaEskandary/Slither.io-bot#visual-tutorial)
