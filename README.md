@@ -1,44 +1,22 @@
-# Table of Contents
-- [Installation instructions](https://github.com/ErmiyaEskandary/Slither.io-bot#installation-instructions)
-	- [Visual tutorial](https://github.com/ErmiyaEskandary/Slither.io-bot#visual-tutorial)
-	- [Text tutorial](https://github.com/ErmiyaEskandary/Slither.io-bot#text-tutorial)
-- [Hotkeys](https://github.com/ErmiyaEskandary/Slither.io-bot#hotkeys)
-- [Contributing](https://github.com/ErmiyaEskandary/Slither.io-bot#contributing)
-	- [Documentation](https://github.com/ErmiyaEskandary/Slither.io-bot#documentation)
-- [Authors](https://github.com/ErmiyaEskandary/Slither.io-bot#authors)
-- [License](https://github.com/ErmiyaEskandary/Slither.io-bot#license)
+## Slither.io ML Bot
 
 # Installation instructions
 
 **NOTE: these instructions are for installing the bot at a production-ready, fully working and a fully tested state, which is recommended. For the latest bleeding edge code, which may not be fully tested, refer to the bot.user.js file in the current default develop branch as the instructions below refer the bot file in the master branch.**
 
-## Interactive tutorial
-http://slither.jlynx.net/
+## Tutorial
+Get a userscript manager, such as violentmonkey or tampermonkey.
 
-## Visual tutorial
-https://www.youtube.com/watch?v=d7mkAgQNuCA - Created by http://slither.jlynx.net/
+Once you have a userscript manager, copy the bots code from this repo and put it into a new userscript in the userscript manager.
 
-https://youtu.be/mlEKp-ZAi7w - Created by http://slithere.com/
-
-https://youtu.be/QF9JBMi-fLo?t=38s - Created by SeppeTutorials
-
-https://youtu.be/IpsAazbVIcw - Created by TheFlyingPlatypus
-
-## Text tutorial
-If you are on chrome, download the [TamperMonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en) extension.
-
-On other browsers, use the [GreaseMonkey](https://addons.mozilla.org/en-GB/firefox/addon/greasemonkey/) extension.
-
-Once installed, click on [this](https://github.com/ErmiyaEskandary/slither.io-bot/raw/master/bot.user.js), and choose **Install**.
-
-Go to [slither.io](http://slither.io/), and enjoy !
+Go to [slither.io](http://slither.io/), and enjoy!
 
 # Hotkeys
 
 Key | Result
 ---|---
 T / Right Click | Bot enabled/disabled
-**O** | **Mobile rendering - Try this if you experience lag**
+**O** | **Mobile rendering - Try this if you experience lag or if you are on battery**
 A/S | Radius multiplier
 D | Quick radius change - "approach" and "avoid" mode
 I | Auto respawn
@@ -55,16 +33,8 @@ Q | Quit to menu
 
 # Contributing
 
-Please refer to the [guidelines for contributing](https://github.com/ErmiyaEskandary/Slither.io-bot/blob/master/.github/CONTRIBUTING.md) for all the information you need.
+This project will soon have guildlines for contributing.
 
-[Check the wiki for additional information](https://github.com/ErmiyaEskandary/Slither.io-bot/wiki)
-
-NOTE : For existing collaborators, please refer to the [DEVELOPER.md file.](https://github.com/ErmiyaEskandary/Slither.io-bot/blob/master/DEVELOPER.md)
-## Documentation
-
-[![Documentation Status](https://readthedocs.org/projects/slitherio-bot/badge/?version=latest)](http://slitherio-bot.readthedocs.io/en/latest/?badge=latest)
-
-The [online documentation](http://slitherio-bot.readthedocs.io/en/latest/) is maintained in the `/docs` directory.
 
 # Authors
 **Ermiya Eskandary & Théophile Cailliau (ErmiyaEskandary & FliiFe)**
