@@ -1,17 +1,16 @@
-## Slither.io ML Bot
+# Slither.io ML Bot
 
-# Installation instructions
+## Installation instructions
 
 **NOTE: these instructions are for installing the bot at a production-ready, fully working and a fully tested state, which is recommended. For the latest bleeding edge code, which may not be fully tested, refer to the bot.user.js file in the current default develop branch as the instructions below refer the bot file in the master branch.**
 
-## Tutorial
 Get a userscript manager, such as violentmonkey or tampermonkey.
 
 Once you have a userscript manager, copy the bots code from this repo and put it into a new userscript in the userscript manager.
 
 Go to [slither.io](http://slither.io/), and enjoy!
 
-# Hotkeys
+## Hotkeys
 
 Key | Result
 ---|---
@@ -31,18 +30,18 @@ ESC | Quick respawn
 Q | Quit to menu
 
 
-# Contributing
+## Contributing
 
 This project will soon have guildlines for contributing.
 
 
-# Original Authors
+## Original Authors
 **Ermiya Eskandary & Théophile Cailliau (ErmiyaEskandary & FliiFe)**
 
 Started as a collaborative and fun project between Ermiya Eskandary and FliiFe on 2016/04/20, with this:
 > Slither.io bot could be cool
 
-# License
+## License
 
 **Licensed under the Mozilla Public License, v. 2.0**
 
