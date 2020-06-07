@@ -1349,7 +1349,7 @@ var userInterface = window.userInterface = (function() {
             // Machine Learning
             try {
               if ((snake.sct % 125) == 0 && training == true) {
-                bot.opt = newDna(bot.opt, pastDna);
+                bot.opt = newDna(bot.opt, pastDna).result;
               }
             } catch {}
 
