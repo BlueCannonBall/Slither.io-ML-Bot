@@ -54,7 +54,7 @@ var baseDna = {
   radiusAvoidSize: 25
 };
 
-function generateGene(gene, data, past) {
+function generateGene(data, gene, past) {
   var resolved = false;
   while (!resolved) {
     var newDat = eval(data);
@@ -72,17 +72,17 @@ function generateGene(gene, data, past) {
 
 function newDna(base, past) {
   var oldBase = base
-  //base.arcSize = Math.floor((Math.random() * Math.PI / 12) + Math.PI / 4);
-  base.radiusMult = generateGene("Math.floor((Math.random() * 15) + 5)", "radiusMult");
-  base.foodAccelSize = generateGene("Math.floor((Math.random() * 90) + 30)", "foodAccelSize");
-  base.foodAccelAngle = generateGene("Math.floor((Math.random() * Math.PI / 4.5) + Math.PI / 1.5)", "foodAccelAngle");
-  base.foodFrames = generateGene("Math.floor((Math.random() * 6) + 2)", "foodFrames");
-  base.foodRoundSize = generateGene("Math.floor((Math.random() * 7.5) + 2.5)", "foodRoundSize");
-  base.foodRoundAngle = generateGene("Math.floor((Math.random() * Math.PI / 12) + Math.PI / 4)", "foodRoundAngle");
-  base.foodSmallSize = generateGene("Math.floor((Math.random() * 15) + 5)", "foodSmallSize");
-  base.rearHeadDir = generateGene("Math.floor((Math.random() * Math.PI / 3) + Math.PI / 1)", "rearHeadDir");
-  base.radiusApproachSize = generateGene("Math.floor((Math.random() * 7.5) + 2.5)", "radiusApproachSize");
-  base.radiusAvoidSize = generateGene("Math.floor((Math.random() * 37.5) + 12.5)", "radiusAvoidSize");
+  base.arcSize = generateGene("Math.floor((Math.random() * Math.PI / 12) + Math.PI / 4)", "arcSize", past);
+  base.radiusMult = generateGene("Math.floor((Math.random() * 15) + 5)", "radiusMult", past);
+  base.foodAccelSize = generateGene("Math.floor((Math.random() * 90) + 30)", "foodAccelSize", past);
+  base.foodAccelAngle = generateGene("Math.floor((Math.random() * Math.PI / 4.5) + Math.PI / 1.5)", "foodAccelAngle", past);
+  base.foodFrames = generateGene("Math.floor((Math.random() * 6) + 2)", "foodFrames", past);
+  base.foodRoundSize = generateGene("Math.floor((Math.random() * 7.5) + 2.5)", "foodRoundSize", past);
+  base.foodRoundAngle = generateGene("Math.floor((Math.random() * Math.PI / 12) + Math.PI / 4)", "foodRoundAngle", past);
+  base.foodSmallSize = generateGene("Math.floor((Math.random() * 15) + 5)", "foodSmallSize", past);
+  base.rearHeadDir = generateGene("Math.floor((Math.random() * Math.PI / 3) + Math.PI / 1)", "rearHeadDir", past);
+  base.radiusApproachSize = generateGene("Math.floor((Math.random() * 7.5) + 2.5)", "radiusApproachSize", past);
+  base.radiusAvoidSize = generateGene("Math.floor((Math.random() * 37.5) + 12.5)", "radiusAvoidSize", past);
   return base;
 }
 
