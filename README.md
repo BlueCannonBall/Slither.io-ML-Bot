@@ -37,6 +37,7 @@ This project will soon have guildlines for contributing.
 
 ## Original Authors
 **Ermiya Eskandary & Théophile Cailliau (ErmiyaEskandary & FliiFe)**
+**Now developed and maintained by BlueCannonBall (OpTiMaL)**
 
 Started as a collaborative and fun project between Ermiya Eskandary and FliiFe on 2016/04/20, with this:
 > Slither.io bot could be cool
