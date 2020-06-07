@@ -70,7 +70,7 @@ function generateGene(gene, data, past) {
   }
 }
 
-function newDNA(base, past) {
+function newDna(base, past) {
   var oldBase = base
   //base.arcSize = Math.floor((Math.random() * Math.PI / 12) + Math.PI / 4);
   base.radiusMult = generateGene("Math.floor((Math.random() * 15) + 5)", "radiusMult");
