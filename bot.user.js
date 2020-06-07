@@ -17,6 +17,8 @@ file, You can obtain one at http://mozilla.org/MPL/2.0/.
 // ==/UserScript==
 
 // Machine Learning system, similar to DNA in real genetics
+var training = true;
+
 var dna = {
   arcSize: Math.PI / 8,
   radiusMult: 10,
@@ -34,7 +36,7 @@ var dna = {
 
 var pastDna = [];
 
-var pastDnaChanges = [];
+//var pastDnaChanges = [];
 
 
 var baseDna = {
@@ -1338,6 +1340,11 @@ var userInterface = window.userInterface = (function() {
         },
 
         onFrameUpdate: function() {
+            // Machine Learning
+            if ((window.snake.sct % 125) && (training == true)) {
+              bot.opt = newDna(bot.opt, pastDna)
+            }
+
             // Botstatus overlay
             var oContent = [];
 
