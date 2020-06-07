@@ -43,6 +43,6 @@ Started as a collaborative and fun project between Ermiya Eskandary and FliiFe o
 
 ## License
 
-**Licensed under the Mozilla Public License, v. 2.0**
+**Licensed under the Mozilla Public License 2.0**
 
 Read LICENSE.md for more info.
