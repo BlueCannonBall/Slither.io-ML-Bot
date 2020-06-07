@@ -12,9 +12,77 @@ file, You can obtain one at http://mozilla.org/MPL/2.0/.
 // @version      1.2.9
 // @description  Slither.io bot
 // @author       BlueCannonBall (aka OpTiMaL)
-// @match        http://slither.io/
+// @match        *://*.slither.io/*
 // @grant        none
 // ==/UserScript==
+
+// Machine Learning system, similar to DNA in real genetics
+var dna = {
+  arcSize: Math.PI / 8,
+  radiusMult: 10,
+  foodAccelSize: 60,
+  foodAccelAngle: Math.PI / 3,
+  foodFrames: 4,
+  foodRoundSize: 5,
+  foodRoundAngle: Math.PI / 8,
+  foodSmallSize: 10,
+  rearHeadAngle: 3 * Math.PI / 4,
+  rearHeadDir: Math.PI / 2,
+  radiusApproachSize: 5,
+  radiusAvoidSize: 25
+};
+
+var pastDna = [];
+
+var pastDnaChanges = [];
+
+
+var baseDna = {
+  arcSize: Math.PI / 8,
+  radiusMult: 10,
+  foodAccelSize: 60,
+  foodAccelAngle: Math.PI / 3,
+  foodFrames: 4,
+  foodRoundSize: 5,
+  foodRoundAngle: Math.PI / 8,
+  foodSmallSize: 10,
+  rearHeadAngle: 3 * Math.PI / 4,
+  rearHeadDir: Math.PI / 2,
+  radiusApproachSize: 5,
+  radiusAvoidSize: 25
+};
+
+function generateGene(gene, data, past) {
+  var resolved = false;
+  while (!resolved) {
+    var newDat = eval(data);
+    for (var iteration in past) {
+      if (newDat == iteration[gene]) {
+        console.log("Repeat gene, restarting.")
+      }
+      else {
+        return newDat;
+        resolved = true;
+      }
+    }
+  }
+}
+
+function newDNA(base, past) {
+  var oldBase = base
+  //base.arcSize = Math.floor((Math.random() * Math.PI / 12) + Math.PI / 4);
+  base.radiusMult = generateGene("Math.floor((Math.random() * 15) + 5)", "radiusMult");
+  base.foodAccelSize = generateGene("Math.floor((Math.random() * 90) + 30)", "foodAccelSize");
+  base.foodAccelAngle = generateGene("Math.floor((Math.random() * Math.PI / 4.5) + Math.PI / 1.5)", "foodAccelAngle");
+  base.foodFrames = generateGene("Math.floor((Math.random() * 6) + 2)", "foodFrames");
+  base.foodRoundSize = generateGene("Math.floor((Math.random() * 7.5) + 2.5)", "foodRoundSize");
+  base.foodRoundAngle = generateGene("Math.floor((Math.random() * Math.PI / 12) + Math.PI / 4)", "foodRoundAngle");
+  base.foodSmallSize = generateGene("Math.floor((Math.random() * 15) + 5)", "foodSmallSize");
+  base.rearHeadDir = generateGene("Math.floor((Math.random() * Math.PI / 3) + Math.PI / 1)", "rearHeadDir");
+  base.radiusApproachSize = generateGene("Math.floor((Math.random() * 7.5) + 2.5)", "radiusApproachSize");
+  base.radiusAvoidSize = generateGene("Math.floor((Math.random() * 37.5) + 12.5)", "radiusAvoidSize");
+  return base;
+}
 
 /*
 Override bot options here
