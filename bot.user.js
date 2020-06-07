@@ -1341,9 +1341,11 @@ var userInterface = window.userInterface = (function() {
 
         onFrameUpdate: function() {
             // Machine Learning
-            if ((snake.sct % 125) && (training == true)) {
-              bot.opt = newDna(bot.opt, pastDna)
-            }
+            try {
+              if ((snake.sct % 125) && (training == true)) {
+                bot.opt = newDna(bot.opt, pastDna);
+              }
+            } catch {}
 
             // Botstatus overlay
             var oContent = [];
