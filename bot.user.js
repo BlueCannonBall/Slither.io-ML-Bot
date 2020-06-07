@@ -1342,7 +1342,7 @@ var userInterface = window.userInterface = (function() {
         onFrameUpdate: function() {
             // Machine Learning
             try {
-              if ((snake.sct % 125) && (training == true)) {
+              if ((snake.sct % 125) == 0 && training == true) {
                 bot.opt = newDna(bot.opt, pastDna);
               }
             } catch {}
